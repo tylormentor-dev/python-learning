@@ -59,3 +59,36 @@ del list1[2]
 for x in list1:
     print('Value:', x) #this will print out all the values in the list. 
 
+
+#TUPLES
+#Tuples can be used to store different types of data. 
+#They're used as data structures and help to create solid, well performing code. 
+
+#To declare a tuple, i declare a simple variable. 
+my_tuple = (1, 'string', 4.5, True)  #to declare the tuple itself, i use parentheses.
+print(my_tuple[1])
+
+#A tuple can accept any mix of data types.
+#to access any of items in the list, you can use an index. 
+#you can use the 'type' function to determine the type of tuple. 
+
+print(type(my_tuple))
+
+#Tuples also provide a method of 'count' and index. 
+print(my_tuple.count('strings'))   #count looks for the number of occurrences of the value within the tuple.
+
+#the index method would give me back the index of where the value lies in the tuple. 
+
+print(my_tuple.index('4.5'))
+
+#You can also do a loop on a tuple, that is, iterate through values and print them out. 
+
+for x in my_tuple():
+    print(x)
+
+#all the values in the tuple will be printed. 
+#the one key difference of a tuple over a list is that tuple values called called immutable, which means that they cannot be changed. 
+
+my_tuple[0] = 5 
+#in the terminal, you'll receive an error stating that 'tuple object does not support item assignment'
+
