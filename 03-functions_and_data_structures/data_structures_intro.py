@@ -92,3 +92,39 @@ for x in my_tuple():
 my_tuple[0] = 5 
 #in the terminal, you'll receive an error stating that 'tuple object does not support item assignment'
 
+#SETS
+#Sets help with storing certain types of data in different types of formats. 
+
+set_a = {1, 2, 3, 4, 5} #using curly braces to define the set itself.
+set_a.add(6) 
+set_a.remove(2)   #set_a.discard(2) also removes a value from the list. 
+  
+print(set_a)
+
+#sets do not allow duplicate values. 
+#sets also have methods that you can use, like adding new content. 
+
+#mathematical operators. 
+set_b = {5, 6, 7, 8, 9, 10} #for a union join, it joins two sets together minus the duplicate values.
+
+print(set_a.union(set_b))
+
+print(set_a.intersection(set_b)) #intersection gives you the items that match in both set a and set b. 
+#you use the ampersand '&' as well instead of the wor intersection. 
+print(set_a & set_b)
+
+print(set_a.difference.set_b)
+#'difference gives you all the elements that are only in set_a and not in set_b. 
+#you can also represent difference by the minus symbol.
+print(set_a - set_b)
+
+print(set_a.symmetric_difference(set_b))
+#when you click run, you'll get back 12346789 and 10, becuase it shows you all the elemts present in set_a or set_b but not in both sets. 
+#symmetric difference can also be represented by the carrot operator. '^'
+
+print(set_a ^ set_b)
+
+#A set is a collection with no duplicares but it's also a collection of unaltered items. 
+
+
+
