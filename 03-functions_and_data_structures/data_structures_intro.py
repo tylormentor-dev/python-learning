@@ -1,5 +1,5 @@
-#A data structure allows you to organize and arrange your data to perform operations on them.
-#Python has the following built-in data structures: List, dictionary, tuple and set.
+#A data structure allows you to organize and arrange your data to perform operations on your data.
+#Python has the following built-in data structures: lists, dictionaries, tuples, and sets
 #These are all considered non-primitive data structures, meaning they are classed as objects.
 
 #Along with the built-in data structures, Python allows users to create their own.
@@ -9,8 +9,8 @@
 
 #Mutability and Immutability
 
-#Data Structures can be mutable or immutable.
-# what is mutability? Mutability refers to data inside the data structure that can be modified.
+#Data structures can be mutable or immutable.
+# What is mutability? Mutability refers to data inside the data structure that can be modified.
 # you can either change, update, or delete the data when needed. A list is an example of a mutable data structure.
 
 #The opposite of mutable is immutable.
@@ -19,9 +19,9 @@
 
 
 # LIST
-#A list is a dynamic array that can hold any datatype.
-#List are always based on an index. 
-#A nested list :
+#A list is a dynamic array that can hold any data type.
+#List are always based on an indexes. 
+#A nested list:
 list1 = [1,[2,3,4], 5, 6 ]
 
 #To print out a list, it can be done in a couple of ways. 
@@ -29,7 +29,7 @@ list1 = [1,[2,3,4], 5, 6 ]
 list2 = [1, 2, 3, 4, 5, 6]
 print(*list2) #the star sign 
 
-print(list2, sep = " ") #use the print statement type, put in a seperator  
+print(list2, sep = " ") #use the print statement type, put in a separator.
 
 #Using the insert function
 list1.insert(len(list1, 7))    #it looks for the index of where to insert to. i used the len() function to the length of list1 and put in what the next value should be. 
@@ -41,10 +41,10 @@ print(list1, sep = " ")        #adds 7 to the list.
 list1.append(7)  
 
 #The extend function
-#adding one or more functions to the list
+#adding one or more items to the list
 list2 = ([7, 8, 9, 10])
 
-#To remove a something a list, we have different options we can use. 
+#To remove something a list, we have different options we can use. 
 #using pop:
 
 list1.pop(4) #specify the index or location which item i want to remove. 
@@ -69,12 +69,12 @@ my_tuple = (1, 'string', 4.5, True)  #to declare the tuple itself, i use parenth
 print(my_tuple[1])
 
 #A tuple can accept any mix of data types.
-#to access any of items in the list, you can use an index. 
-#you can use the 'type' function to determine the type of tuple. 
+#To access any of the items in the list, you can use an index. 
+#you can use the 'type' function to determine the the type of the tuple.
 
 print(type(my_tuple))
 
-#Tuples also provide a method of 'count' and index. 
+#Tuples also provide count() and index() methods.
 print(my_tuple.count('strings'))   #count looks for the number of occurrences of the value within the tuple.
 
 #the index method would give me back the index of where the value lies in the tuple. 
@@ -119,12 +119,35 @@ print(set_a.difference.set_b)
 print(set_a - set_b)
 
 print(set_a.symmetric_difference(set_b))
-#when you click run, you'll get back 12346789 and 10, becuase it shows you all the elemts present in set_a or set_b but not in both sets. 
+#when you click run, you'll get back 12346789 and 10, because it shows you all the elements present in set_a or set_b but not in both sets. 
 #symmetric difference can also be represented by the carrot operator. '^'
 
 print(set_a ^ set_b)
 
-#A set is a collection with no duplicares but it's also a collection of unaltered items. 
+#A set is a collection with no duplicates but it's also a collection of unaltered items. 
+
+
+#DICTIONARIES. 
+#Python dictionaries are optimized to retrieve values. 
+#Dictionaries access values based on keys and not on index position. 
+
+#In python dictionaries, a key is assigned a value, called key-value pair. 
+#Instead of looking through a list to find a items, you can go straight to an item you need by using it's key. 
+#the dictionary is also mutable in that the values can be changed or updated. 
+
+#python dictionary syntax : 
+sample_dict = {1: 'Coffee', 2: 'Tea', 3: 'Juice'}
+#key-value pairings
+print(sample_dict[1])
+#insert '1' in curly brackets to access 'Coffee'
+#output : Coffee
+
+sample_dict[2] = 'Mint tea' #replacing Tea for Mint tea.
+
+del sample_dict[3] #removes the juice value. 
+
+#There are three methods to iterate through a dictionary: standard iteration method, items() function or values() function.
+
 
 
 
