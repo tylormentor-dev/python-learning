@@ -87,7 +87,7 @@ for x in my_tuple():
     print(x)
 
 #all the values in the tuple will be printed. 
-#the one key difference of a tuple over a list is that tuple values called called immutable, which means that they cannot be changed. 
+#the one key difference of a tuple over a list is that tuple values are called immutable, which means that they cannot be changed. 
 
 my_tuple[0] = 5 
 #in the terminal, you'll receive an error stating that 'tuple object does not support item assignment'
