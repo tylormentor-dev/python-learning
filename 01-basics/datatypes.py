@@ -39,5 +39,5 @@ type(True) #this will return <class 'bool'>
 example_set = {1, 'hello', 3, 8, "A"}
 type(example_set) #this will return <class 'set'>
 
-#i checked the type of the value in the example set variable by passind it a type function. 
+#i checked the type of the value in the example set variable by passing it a type function. 
 

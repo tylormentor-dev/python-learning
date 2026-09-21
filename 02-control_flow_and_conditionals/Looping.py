@@ -33,7 +33,7 @@ while count < len(favorites): #The loop will run while the count is less than th
        count += 1   #The key difference here is that i need to use the index to access the items within the favorite array. To do this, i add count to represent the index. 
 
 
-#it's impotant to increment count.. to match the loop statement.
+#it's important to increment count.. to match the loop statement.
 #if you do not increment count, you'll end up with an infinite loop, which keeps looping until the compiler stops it from running out of memory. 
 
 

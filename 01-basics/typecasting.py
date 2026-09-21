@@ -4,12 +4,12 @@
 #2. Explicit
 
 #Implicit is performed automatically by pythons compiler to prevent data loss. 
-#Python only converts values if the data types are compatiable. 
+#Python only converts values if the data types are compatible. 
 
 #int and float are compatible data types.
 #strings are int are not compatible data types.
 
-#Expilicit is used by using python functions. 
+#Explicit is used by using python functions. 
 #str(), Int(), float(). 
 
 #str() is used convert any data type to a string.
