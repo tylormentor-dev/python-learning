@@ -2,8 +2,8 @@
 
 #read() - returns the entire contents of the file as a string that will contain all the characters.
 #you can also pass in an integer to return only the specified number of characters in the file. 
-#with open('samplefile.txt', 'r') as file:
-   # print(file.read())
+with open('sample.txt', 'r') as file:
+   print(file.read())
 
 #readline() - returns a single line as a string
 #if you have a file that contains two files, the read line function will return as the output only the first line of text.
@@ -12,8 +12,8 @@
 #This is the first line. 
 #This is the second line. 
 
-#with open('testing.txt', 'r') as file:
-    #print(file.readline(10))
+with open('testing.txt', 'r') as file:
+    print(file.readline(10))
 
 #output: This is the first line.
 #the readline function can also include an integer argument for returning specified number of characters on a single line. 
