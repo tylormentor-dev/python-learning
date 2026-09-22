@@ -44,6 +44,8 @@ with open('test.txt', mode = 'r') as file:  #with open function is better at exc
 
      print(data)
 
+     
+
 
 
 
