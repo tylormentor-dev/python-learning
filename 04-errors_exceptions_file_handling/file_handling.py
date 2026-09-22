@@ -22,6 +22,30 @@
 #Python uses text as the default file handling. 
 
 #To set the file handling to binary, you need to pass the letter b along with either the read or write option. 
+#For example: rb, rb+, wb, ab
+
+#Before you use the open function, you need to create a new file testing. 
+file = open('test.txt', mode = 'r') #assign a open function to gain access to a file. In parentheses i add the first argument, namely test.txt.
+   #so far, the variable called file will have access to the contents of the test.txt.
+   #to actually read the file, you need to add a line or read lines function. 
+data = file.readline()
+
+print(data)
+
+file.close()
+#the read line will return the first line of the file while read lines will output an array with multiple lines.
+#Since we only have a single line in the test file, we'll use the read line function. 
+#you add a close function that will close access to the test.txt file. 
+
+#this is another way of opening a file:
+
+with open('test.txt', mode = 'r') as file:  #with open function is better at exception handling and will automatically close the file for you.
+     data = file.readline()
+
+     print(data)
+
+
+
 
 
 
