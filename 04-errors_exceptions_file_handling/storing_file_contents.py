@@ -1,6 +1,6 @@
 #Imagine you are trying to come up with a name for your new dog. You're really unsure of what you'd like to call the dog, so you decide to use your Python skills to help you decide.
 #You start by accessing a file with a shortlist of names you'd like to use for your new pet.
-#The file is named petnames.txt, and has the following content:
+#The file is named pet.names.txt, and has the following content:
 
 #Ace
 #Atlas
@@ -23,12 +23,10 @@
 #Rex
 #Rocky
 #Rocket
-#Wolfie
+#Now that you have the file pet.names.txt, you'd like to use this file inside your Python program to randomly pick a single pet name.
 
-#Now that you have the file petnames.txt, you'd like to use this file inside your Python program to randomly pick a single pet name.
-
-#To do this, you'll need to have a Python file into which you'll be importing the petnames.txt file, as follows:
-f = open("petnames.txt", "r")
+#To do this, you'll need to have a Python file into which you'll be importing the pet.names.txt file, as follows:
+f = open("pet.names.txt", "r")
 
 #The open() function reads in a file outside of the program itself.
 #The open() function accepts two parameters:
@@ -41,41 +39,40 @@ f = open("petnames.txt", "r")
 
 #The print(f_content) line returns the exact content of the file, as is:
 
-Ace
-Atlas
-Bailey
-Bear
-Blaze
-Boomer
-Buddy
-Coco
-Cooper
-Duke
-Dozer
-Echo
-Gizmo
-Harley
-Mac
-Max
-Milo
-Oscar
-Rex
-Rocky
-Rocket
-Wolfie
+#Ace
+#Atlas
+#Bailey
+#Bear
+#Blaze
+#Boomer
+#Buddy
+#Coco
+#Cooper
+#Duke
+#Dozer
+#Echo
+#Gizmo
+#Harley
+#Mac
+#Max
+#Milo
+#Oscar
+#Rex
+#Rocky
+#Rocket
 
 #Now that I've confirmed that I'm successfully reading in the file, it would not be useful to keep printing out the file's contents, so I can comment out the print(f_content) line.
 #Additionally, I can get the f_content variable into a list. The string "\n" is used to split the text where a new line is found.
 
-f_content_list = f_content.split("\n")
+#f_content_list = f_content.split("\n")
 #Now I'm ready to print the f_content_list variable, as follows:
 
-print(f_content_list)
+#print(f_content_list)
 #This time, the output is as follows:
-['Ace', 'Atlas', 'Bailey', 'Bear', 'Blaze', 'Boomer', 'Buddy', 'Coco', 'Cooper', 'Duke', 'Dozer', 'Echo', 'Gizmo', 'Harley', 'Mac', 'Max', 'Milo', 'Oscar', 'Rex', 'Rocky', 'Rocket', 'Wolfie']
+['Ace', 'Atlas', 'Bailey', 'Bear', 'Blaze', 'Boomer', 'Buddy', 'Coco', 'Cooper', 'Duke', 'Dozer', 'Echo', 'Gizmo', 'Harley', 'Mac', 'Max', 'Milo', 'Oscar', 'Rex', 'Rocky', 'Rocket',]
 
 #Here's my complete code up to this point, with the redundant print() calls deleted.
-f = open("petnames.txt", "r")
+#f = open("pet.names.txt", "r")
 f_content = f.read()
 f_content_list = f_content.split("\n")
 f.close()
@@ -90,7 +87,7 @@ print(random.choice(f_content_list))
 
 #Here's the full code of my program now (including the commented-out lines of code):
 import random
-f = open("petnames.txt", "r")
+#f = open("pet.names.txt", "r")
 f_content = f.read()
 f_content_list = f_content.split("\n")
 f.close()
