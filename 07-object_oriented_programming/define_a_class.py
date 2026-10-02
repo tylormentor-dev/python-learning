@@ -9,7 +9,7 @@ class House:
         pass
         # Functionality to calculate the costs from the area of the house
 
-#The code above starts with a class definition.
+'''The code above starts with a class definition.'''
 #Then you start with a multiline comment, which alternatively can also be called a docstring (''' enclosed comments ''' ).
 #in the next line you have a couple of data members or attributes: num_rooms and bathrooms.
 #This is then followed by a function definition, which is empty except for the pass keyword that basically signals Python to continue execution without throwing an error. 
