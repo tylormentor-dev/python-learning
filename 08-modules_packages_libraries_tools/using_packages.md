@@ -220,9 +220,6 @@ NLTK contains many modules and subpackages. Import only the functionality your p
 - Import specific functions when appropriate to keep your code clear.
 - Understand what a function does before using it in your program.
 
-## Suggested Commit Message
-
-`Add Using Popular Python Packages notes`
 
 ## Installing Python Packages
 
